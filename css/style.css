@@ -16,7 +16,7 @@
 .containerSchedule {
 	/* background: #232931;
 	width: 540px; */
-	height: 950px;
+	height: 940px;
 	margin: 0 auto;
 	position: relative;
 	/* margin-top: 10%; */
@@ -60,7 +60,7 @@
 
   .rb-container ul.rb li::before {
 	position: absolute;
-	left: -18px;
+	left: -11px;
 	top: -5px;
 	content: " ";
 	/* border: 8px solid rgba(255, 255, 255, 1); */
