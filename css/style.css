@@ -5,6 +5,11 @@
 /* My contents:--------------------------------
 */
 
+.data{
+	left: 5%;
+    font-size: 1.2em;
+}
+
 .medalha {
 	font-size: 70px;
 }
