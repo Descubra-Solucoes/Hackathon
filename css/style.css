@@ -10,6 +10,15 @@
     font-size: 1.2em;
 }
 
+.colaboradores p{
+	font-weight: bold;
+}
+
+.colaboradores .fa{
+	color: #4A6DD9;
+	margin-left: 5px;
+}
+
 .medalha {
 	font-size: 70px;
 }
@@ -4607,6 +4616,8 @@ html.boxed body {
 
 .text-primary {
 	color: #4A6DD9 !important;
+	font-family: "Roboto", sans-serif !important;
+
 }
 
 .text-gray-dark {
