@@ -9,6 +9,33 @@
 	font-size: 70px;
 }
 
+.devider-bottom-personalizado {
+	position: relative;
+	padding-bottom: 0px;
+}
+
+.devider-bottom-personalizado:after {
+	content: '';
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 150px;
+	height: 3px;
+	background-color: #4A6DD9;
+	display: none;
+}
+
+@media (min-width: 1200px) {
+	.devider-bottom-personalizado {
+		padding-bottom: 20px;
+	}
+	.devider-bottom-personalizado:after {
+		width: 470px;
+		left: -175px;
+		display: block;
+	}
+}
+
 /*
 * Cronograma
 */
@@ -200,7 +227,7 @@ html p a:hover {
 * Typography
 */
 body {
-	font-family: "Roboto", serif;
+	font-family: "Roboto" !important; 
 	font-size: 17px;
 	line-height: 2.14286;
 	font-weight: 400;
@@ -3915,7 +3942,7 @@ textarea.form-input {
 }
 
 .footer-classic .brand img {
-	width: 100%;
+	width: 70%;
 }
 
 .footer-classic-description {
@@ -4665,24 +4692,38 @@ html.boxed body {
 }
 
 .decor-text-3 {
-	position: absolute;
 	transition: all ease .35s;
-	z-index: 1;
-	top: 0;
+}
+
+.decor-text-3 {
+	transition: all ease .35s;
+	position: absolute;
+	bottom: 260px;
 	left: 50%;
-	color: #404044;
 	transform: translateX(-50%);
 }
 
-.ie-11 .decor-text-3, .mac-os .decor-text-3 {
-	left: 0;
-	right: 0;
+@media (min-width: 768px) {
+	.decor-text-3 {
+		bottom: 21%;
+		left: 50%;
+		transform: translateX(-50%);
+	}
 }
+
+@media (min-width: 992px) {
+	.decor-text-3 {
+		left: 50%;
+		transform: translateX(-75%);
+		bottom: -10%;
+	}
+}
+
 
 .decor-text-4 {
 	transition: all ease .35s;
 	position: absolute;
-	bottom: 260px;
+	bottom: 2%;
 	left: 50%;
 	transform: translateX(-50%);
 }
@@ -4697,9 +4738,9 @@ html.boxed body {
 
 @media (min-width: 992px) {
 	.decor-text-4 {
-		left: 50%;
+		left: 80%;
 		transform: translateX(-75%);
-		bottom: -10%;
+		bottom: -5%;
 	}
 }
 
@@ -8879,32 +8920,4 @@ html.rd-navbar-fixed-linked .page {
 .layer-6 {
 	top: 24%;
 	left: 19.5%;
-}
-
-.row-15 .box-default {
-    text-align: center;
-    margin-bottom: 20px;
-}
-
-.row-15 .box-default-title {
-    font-size: 1.25em;
-    font-weight: bold;
-    margin-bottom: 5px;
-}
-
-.row-15 .box-default-description {
-    font-size: 1em;
-    margin-top: 0;
-}
-
-.section.custom-section h3 {
-    text-align: left;
-}
-
-.section.custom-section {
-    padding: 40px 0;
-}
-
-.decor-text-2 {
-    display: none; /* Remove the decorative text */
 }
